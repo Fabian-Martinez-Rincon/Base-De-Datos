@@ -227,11 +227,12 @@ body
 {
     position: fixed;
     bottom: 010;
-    right: 25px;
+    right: 80px;
     width: 200px;
     border-bottom: 20px solid #03a9f4;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    
 }
 .box h2
 {
@@ -251,12 +252,16 @@ body
 .box ul li
 {
     list-style: none;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     background: rgb(41, 41, 41);
     box-shadow: 0 5px 25px rgba(0, 0, 0,.1);
     transition: transform 0.5s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+/*
 .box ul:hover li
 {
     opacity: 0.1;
@@ -270,6 +275,7 @@ body
     color: #fff;
     opacity: 1;
 }
+*/
 .box ul li span
 {
     width: 20px;
@@ -289,4 +295,12 @@ body
 {
     background: #fff;
     color: #25bcff;
+}
+.divTabla {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break:break-all;
+    white-space:pre-line;
+    height:50rem;
 }
