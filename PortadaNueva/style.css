@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1b192f;
+    color: #f8f4f9;
+}
+.card
+{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#211ed4,#29c914);
+}
+.card img
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+.card:hover img
+{
+    left: 80%;
+    height: 500px;
+}
+.card .content
+{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.card:hover .content
+{
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+.card .content h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.card .content p
+{
+    color: #fff;
+}
+.card .content a
+{
+    position: relative;
+    display: inline-block;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+@media (max-width: 991px)
+{
+    .card
+    {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+        transition: 0.5s;
+        align-items: flex-start;
+    }
+    .card:hover
+    {
+        height: 600px;
+    }
+    .card:hover img
+    {
+        left: 50%;
+        height: 350px;
+    }
+    .card .content
+    {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+@media (max-width: 420px)
+{
+    .card .content
+    {
+        padding: 30px;
+    }
+    .card:hover img
+    {
+        height: 300px;
+    }
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .searchbar-label {
+    display: block;
+    margin: 10rem 0 2.5rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    background-color: #0d0c1d;
+    border: none;
+    outline: 2px solid #604e7a;
+    color: #f8f4f9;
+  }
+
+  input[type="text"]:focus {
+    border: none;
+    outline-color: #bdbdbd;
+  }
+
+  .searchbar {
+    max-width: 25rem;
+    margin-bottom: 5rem;
+  }
+
+  .search-results {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .search-results-item {
+    background-color: #151630;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .search-item {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .search-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #151630;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7c2af1;
+    border-radius: 0.8rem;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .title {
+    font-family: "Kaushan Script", cursive;
+    font-size: 10rem;
+    margin: 4rem 0 2.5rem;
+  }
+
+  @media screen and (min-width: 2000px) {
+      html {
+          font-size: 92.5%;
+        }
+  }
