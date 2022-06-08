@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito+Sans:wght@300&display=swap");
+@import url("https://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
 
 * {
   margin: 0;
@@ -13,7 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #0d0c1d;
+  background-color: #2b2b2b;
   color: #f8f4f9;
 }
 
@@ -34,13 +34,13 @@ input[type="text"] {
   padding: 0.8rem 0.5rem;
   background-color: #0d0c1d;
   border: none;
-  outline: 2px solid #7c2af1;
+  outline: 2px solid #4d4d4d;
   color: #f8f4f9;
 }
 
 input[type="text"]:focus {
   border: none;
-  outline-color: #f3414e;
+  outline-color: #252525;
 }
 
 .searchbar {
@@ -56,7 +56,7 @@ input[type="text"]:focus {
 }
 
 .search-results-item {
-  background-color: #151630;
+  background-color: #4b4b4b;
   padding: 1rem;
   border-radius: 0.8rem;
   animation: fadeIn 0.5s ease-in-out;
@@ -78,7 +78,7 @@ input[type="text"]:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #151630;
+  background: #6b6b6b;
 }
 
 /* Handle */
